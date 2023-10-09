@@ -1,0 +1,48 @@
+<!-- <select id="currency-one" [(ngModel)]="selectedCurrencyOne">
+    <option *ngFor="let currency of currencies">{{ currency }}</option>
+  </select>
+  <select id="currency-two" [(ngModel)]="selectedCurrencyTwo">
+    <option *ngFor="let currency of currencies">{{ currency }}</option>
+  </select>
+  <input id="num" type="number" [(ngModel)]="amount" (ngModelChange)="calculate()">
+  <div id="rate">1 {{ selectedCurrencyOne }} = {{ exchangeRate }} {{ selectedCurrencyTwo }}</div>
+  <button id="swap" (click)="swapCurrencies()">Swap</button>
+  <div id="amount">{{ convertedAmount }}</div>
+   -->
+
+<!-- coverter -->
+
+<div class="convert-container">
+  <div class="convert-container__box">
+
+  </div>
+  <div class="convert-container__box">
+    <div class="currency">
+      <div class="from">
+        <h4 class="h4">from</h4>
+        <select id="currency-1" [(ngModel)]="selectedCurrencyOne">
+          <option *ngFor="let currency of currencies">{{ currency }}</option>
+        </select>
+      </div>
+      <span class="swap"><button id="swapBtn" (click)="swapCurrencies()"></button></span>
+      <div class="to">
+        <h4 class="h4">to</h4>
+        <select id="currency-2" [(ngModel)]="selectedCurrencyTwo">
+          <option *ngFor="let currency of currencies">{{ currency }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="rate-container">
+
+      <p class="paragraph" id="rate">1 {{ selectedCurrencyOne }} = {{ exchangeRate }} {{ selectedCurrencyTwo }}</p>
+    </div>
+  </div>
+  <div class="convert-container__box">
+    <div class="amount-flex">
+      <h4 class="h4">amount</h4>
+      <input id="num" type="number" [(ngModel)]="amount" (ngModelChange)="calculate()" placeholder="0" />
+      
+    </div>
+    <h1 class="amount" id="amount">{{ selectedCurrencyTwo }} {{ convertedAmount }}</h1>
+  </div>
+</div>

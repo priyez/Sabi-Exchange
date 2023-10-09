@@ -1,0 +1,36 @@
+.loader {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-color: #567DFD;
+    overflow:hidden;
+    z-index: 999;
+    &__wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   .convert-from{
+    letter-spacing: 2.0px;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+   }
+      .equal{
+       letter-spacing: 2.0px;
+       letter-spacing: 2.0px;
+       font-size: 3rem;
+       text-transform: capitalize;
+       margin-bottom: 2rem;
+      }
+      .convert-to{
+        letter-spacing: 2.0px;
+        letter-spacing: 2.0px;
+        font-size: 3rem;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+      }
+  }
+  }

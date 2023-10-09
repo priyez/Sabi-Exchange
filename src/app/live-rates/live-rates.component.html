@@ -1,0 +1,110 @@
+<!-- <div class="table-wrapper">
+    <table>
+      <tr>
+        <th>currency code</th>
+        <th>currency Rate</th>
+      </tr>
+      <tr *ngFor="let currency of Object.keys(exchangeRates)">
+        <td class="code">{{ currency }}</td>
+        <td>{{ exchangeRates[currency] }}</td>
+      </tr>
+    </table>
+  </div> -->
+
+<div class="marquee">
+  <div class="marquee__heading">
+    <h1 class="h1">Live<br> Exchange Rates</h1>
+  </div>
+  <div class="marquee__rates">
+    <div class="table-wrapper">
+
+      <table>
+        <tr>
+          <th>currency code</th>
+          <th>currency Rate</th>
+      </tr>
+        <tr  *ngFor="let rate of exchangeRatesOne">
+          <td class="code">{{ rate.code }}</td>
+          <td>{{ rate.rate }}</td>
+        </tr>
+      
+     
+        </table>
+        <table>
+        <tr>
+            <th>currency code</th>
+            <th>currency Rate</th>
+        </tr>
+        <tr  *ngFor="let rate of exchangeRatesTwo">
+          <td class="code">{{ rate.code }}</td>
+          <td>{{ rate.rate }}</td>
+        </tr>
+        
+       
+        </table>
+        <table>
+          <tr>
+            <th>currency code</th>
+            <th>currency Rate</th>
+        </tr>
+          <tr  *ngFor="let rate of exchangeRatesThree">
+            <td class="code">{{ rate.code }}</td>
+            <td>{{ rate.rate }}</td>
+          </tr>
+        
+       
+          </table>
+          <table>
+            <tr>
+              <th>currency code</th>
+              <th>currency Rate</th>
+          </tr>
+            <tr  *ngFor="let rate of exchangeRatesFour">
+              <td class="code">{{ rate.code }}</td>
+              <td>{{ rate.rate }}</td>
+            </tr>
+          
+         
+            </table>
+            <table>
+              <tr>
+                <th>currency code</th>
+                <th>currency Rate</th>
+            </tr>
+              <tr  *ngFor="let rate of exchangeRatesFive">
+                <td class="code">{{ rate.code }}</td>
+                <td>{{ rate.rate }}</td>
+              </tr>
+            
+           
+              </table>
+              <table>
+                <tr>
+                  <th>currency code</th>
+                  <th>currency Rate</th>
+              </tr>
+                <tr  *ngFor="let rate of exchangeRatesSix">
+                  <td class="code">{{ rate.code }}</td>
+                  <td>{{ rate.rate }}</td>
+                </tr>
+              
+             
+                </table>
+                <table>
+                  <tr>
+                    <th>currency code</th>
+                    <th>currency Rate</th>
+                </tr>
+                  <tr  *ngFor="let rate of exchangeRatesSeven">
+                    <td class="code">{{ rate.code }}</td>
+                    <td>{{ rate.rate }}</td>
+                  </tr>
+                
+               
+                  </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- <ngx-skeleton-loader *ngIf="!contentLoaded" appearance="circle"></ngx-skeleton-loader> -->

@@ -1,0 +1,40 @@
+.nav {
+    grid-column: 1/15;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+
+    .sabi-logo {
+        margin-right: auto;
+        font-style: italic;
+        margin-right: auto;
+        font-weight: 900;
+        font-size: 4rem;
+        &::after{
+            content: "Satisfied Rate";
+            font-size: 1rem;
+            text-transform: uppercase;
+            display: flex;
+            font-style: normal;
+            letter-spacing: 1px;
+        }
+    }
+
+    .timeContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .time {
+        margin-left: 2rem;
+        padding: 1.2rem 2rem 1.2rem 2rem;
+        background-color: #fff;
+        color: black;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        // background-image: url('../img/png/usa-flag.png');
+        background-repeat: no-repeat;
+        background-position: 68% 48%;
+
+    }
+}

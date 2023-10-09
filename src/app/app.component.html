@@ -1,0 +1,16 @@
+<!-- Desktop mode components -->
+<!-- <div *ngIf="isDesktop$ | async; else mobileView">
+    <app-desktop-mode-component></app-desktop-mode-component>
+  </div> -->
+  <app-loader-component></app-loader-component>
+  <app-desktop-mode-component></app-desktop-mode-component>
+    <!-- Mobile mode components -->
+<!-- <ng-template #mobileView> -->
+<app-header></app-header>
+<app-live-rates></app-live-rates>
+<app-converter></app-converter>
+<app-footer></app-footer>
+<!-- </ng-template> -->
+
+<!-- ng add @angular/flex-layout -->
+

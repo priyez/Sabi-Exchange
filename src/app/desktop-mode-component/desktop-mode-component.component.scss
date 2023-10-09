@@ -1,0 +1,50 @@
+.desktop-mode{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+   z-index: 15;
+    background-color: hsl(228deg 24% 8%);
+    overflow: hidden;
+    position: fixed;
+    @media only screen and (max-width: 37.5em) { // phone
+       display: none;
+    }
+
+.desktop-marquee {
+    cursor: pointer;
+    border-top: 1px solid #bdbcbc;
+    border-bottom: 1px solid #bdbcbc;
+    animation: swipe 500s infinite normal linear;
+    display:flex;
+    height: 25.74vh !important;
+    top: 35%;
+    position: absolute;
+        // transform: rotate(270deg);
+        // transform-origin: 71vh 427%;
+        margin: 4vh 0;
+
+}
+
+.desktop-marqueeText {
+    color: #bdbcbc;
+    font-family: 'Neue Haas Grotesk Display Pro', Arial, Helvetica,
+    sans-serif;
+    transition: all 100ms linear;
+    font-size: 6.25rem;
+    padding: 4.25rem 3.46875rem;
+    width: 700px;
+}
+
+
+
+
+// animation
+@keyframes swipe {
+from {
+transform: translateX(0%);
+}
+to {
+transform: translateX(30%);
+}
+}
+}
